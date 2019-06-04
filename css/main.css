@@ -51,8 +51,8 @@ section code {
   color: #FFF;
   background-color: #333334;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .button-submit {
@@ -62,12 +62,13 @@ section code {
   background-color: #64ACA0;
   border-radius: 0.25em;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .nav-bar li:hover, .nav-bar li:focus, .button-submit:hover, .button-submit:focus, .button-nav:hover, .button-nav:focus {
-  background-color: #999;
+  background-color: #CABFAB;
+  color: #333334;
 }
 
 .input-textbox {
