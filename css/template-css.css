@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url(../fonts/proxima_nova_reg-webfont.ttf);
+
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: proxima-nova;
+  margin: 0;
+}
+
+.box {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+  -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.nav-main {
+  background: #333334;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.nav-main .nav-left {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-main .nav-right {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-main a {
+  padding: 1em;
+  color: #FFF;
+  background-color: #333334;
+  text-decoration: none;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.nav-main a:hover {
+  background-color: #CABFAB;
+  color: #333334;
+}
+
+
+
+
+/*https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01*/
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+
+  text-align: center;
+}
+
+.footer {
+  background: #333334;
+  width: 100%;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
