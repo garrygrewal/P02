@@ -1,28 +1,69 @@
 /* This is some default styling for the exercise */
 /* edited by Eric Cheng in lab 3 IAT339 based on tutorial in class provided by Paul B*/
-.container .block {
-	height: 200px;
-}
-.container .block:nth-of-type(even) {
-	background-color: #333;
-}
-.container .block:nth-of-type(odd) {
-	background-color: #AAA;
+
+*, *::after, *::before {
+	box-sizing: border-box;
 }
 
-.container{
+.box {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
 	display: flex;
+  -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
-.block{
-	width: 20%;
-
+/*Navigation bar*/
+.nav-main {
+  background: #333334;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
 
+.nav-main .nav-left {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-main .nav-right {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Main content*/
+/*https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01*/
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+	/*padding: 2em;*/
+	padding-bottom: 3em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+
+  text-align: center;
+}
+
+
+
+
 @media (max-width: 30em){
-	.block{
-		flex-direction: row;
-		width: 100%;
-	}
+
 }
