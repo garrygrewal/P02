@@ -1,0 +1,130 @@
+
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url(../fonts/proxima_nova_reg-webfont.ttf);
+
+}
+
+body {
+  font-family: proxima-nova;
+  margin: 0;
+}
+
+/*Navigation*/
+.nav-main .nav-right li {
+  flex: 1 1 auto;
+}
+
+.nav-main a {
+  padding: 1em;
+  color: #FFF;
+  background-color: #333334;
+  text-decoration: none;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+/*Text Styling*/
+/*pixel to em conversion from http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/*/
+.header-level1 {
+  font-size: 2.25em;
+  color: #868476
+}
+.header-level2 {
+  font-size: 1.6875em;
+  color: #868476
+}
+.header-level3 {
+  font-size: 1.3125em;
+  color: #868476
+}
+
+.header-level4 {
+  font-size: 1.125em;
+  color: #868476
+}
+
+.header-level5 {
+  font-size: 1em;
+  color: #868476
+}
+
+/*Service item listings*/
+/* box shadow styling taken from https://www.w3schools.com/css/css3_shadows.asp*/
+.service-listing {
+  background-color: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top: solid 4px;
+  border-color: #CABFAB;
+  width: 30em;
+  align-self: center;
+}
+
+.service-items {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  padding: 0.5em;
+  border-bottom: solid 1px;
+  border-color: #b4b4b4;
+}
+
+.barber-items {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  padding: 0.5em;
+  border-bottom: solid 1px;
+  border-color: #b4b4b4;
+}
+
+.service-button .button-submit {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #64ACA0;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+/*used as line breaks in item description*/
+.service-items p span {
+  display: block;
+}
+
+.barber-items p span {
+  display: inline-block;
+}
+
+/*
+.available-times {
+  display: flex;
+  justify-content: flex-start;
+}
+*/
+
+/*hover and focus interactions*/
+.nav-main a:hover {
+  background-color: #CABFAB;
+  color: #333334;
+}
+
+.button-submit:hover, .button-submit:focus {
+  background-color: #CABFAB;
+  color: #333334;
+}
+
+/*Footer*/
+.footer {
+  background: #333334;
+  width: 100%;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
