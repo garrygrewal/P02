@@ -135,7 +135,11 @@ section code {
   padding: 0;
   overflow: hidden;
   background-color: #333334;
-  width: 50%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+ 
 }
 
 .nav-bar li {
@@ -237,3 +241,11 @@ p .header-level4 {
 .grid-col-1of3 a {
   text-decoration: none;
 }
+
+/* About page classes*/
+.about-image {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+}
+
