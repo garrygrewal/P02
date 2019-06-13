@@ -3,17 +3,48 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/main.css" rel="stylesheet" type="">
+	
+	<link href="css/main2.css" rel="stylesheet" type="">
+	<link href="css/grids.css" rel="stylesheet" type="">
+	<link href="css/normalize.css" rel="stylesheet" type="">
+	
 	<title>Login/Register</title>
 </head>
 <body>
-	<h1>Login/Register</h1>
-	<nav class="nav-bar">
-		<a href="about.html" class="button-nav"> About</a>
-		<a href="barbers.html" class="button-nav"> Barbers</a>
-		<a href="contact.html" class="button-nav"> Contact</a>
-		<a href="login.html" class="button-nav"> Login/Register</a>
-		<a href="book.html" class="button-nav"> Book</a>
+	<nav class="nav-main">
+		<div class="column">
+			<ul class="nav-left">
+				<li><a href="index.html">Logo</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<ul class="nav-right">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="book.html">Book</a></li>
+				<li><a href="barbers.html">Barbers</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
 	</nav>
+	<div class="row">
+		<div class="column">
+			<p class="header-level1">Login</p>
+
+			<div class="login">
+				<div class="login-item">
+					<div class="row">
+						<span class="header-level3"><p>Username</p></span>
+						<span class="header-level5"><input class="input-textbox" type="text" placeholder="username"></input></span>
+					</div>
+					<div class="row">
+						<span class="header-level3"><p>Password</p></span>
+						<span class="header-level5"><input class="input-textbox" type="text" placeholder="password"></input></span>
+					</div>
+					<span><a class="login-button" href="book.html">Login</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
