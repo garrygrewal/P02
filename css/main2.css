@@ -52,7 +52,7 @@ body {
 
 /*Service item listings*/
 /* box shadow styling taken from https://www.w3schools.com/css/css3_shadows.asp*/
-.service-listing {
+.service-listing, .login{
   background-color: #FFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-top: solid 4px;
@@ -61,7 +61,7 @@ body {
   align-self: center;
 }
 
-.service-items {
+.service-items, .login-item{
   display: flex;
   align-items: baseline;
   justify-content: space-around;
@@ -70,7 +70,8 @@ body {
   border-color: #b4b4b4;
 }
 
-.barber-items {
+
+.barber-items{
   display: flex;
   align-items: baseline;
   justify-content: space-around;
@@ -79,7 +80,16 @@ body {
   border-color: #b4b4b4;
 }
 
-.service-button .button-submit {
+.barber{
+  background-color: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top: solid 4px;
+  border-color: #CABFAB;
+  width: 20em;
+  align-self: center;
+}
+
+.service-button, .button-submit, .login-button{
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
@@ -121,6 +131,8 @@ body {
 .footer {
   background: #333334;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer p {
