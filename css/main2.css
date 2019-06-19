@@ -127,6 +127,42 @@ body {
   color: #333334;
 }
 
+.about-image {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  min-width: 400px;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.home-banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,0.8);
+  padding: 0.25rem 3rem;
+}
+
+.banner-text{
+  color:#64ACA0;
+}
+
+.about-text{
+  color: #333334;
+}
+
+.map-image{
+  align-self: center;
+  width: 30rem;
+  height: auto;
+}
+
 /*Footer*/
 .footer {
   background: #333334;
