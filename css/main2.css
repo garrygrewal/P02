@@ -89,7 +89,7 @@ body {
   align-self: center;
 }
 
-.service-button, .button-submit, .login-button{
+ .button-submit {
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
