@@ -52,7 +52,7 @@ body {
 
 /*Service item listings*/
 /* box shadow styling taken from https://www.w3schools.com/css/css3_shadows.asp*/
-.service-listing, .login{
+.service-listing, .appointment-listing, .login{
   background-color: #FFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-top: solid 4px;
@@ -61,11 +61,13 @@ body {
   align-self: center;
 }
 
-.service-items, .login-item{
+.service-items, .login-item {
   display: flex;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
   border-bottom: solid 1px;
   border-color: #b4b4b4;
 }
@@ -73,9 +75,46 @@ body {
 
 .barber-items{
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-bottom: solid 1px;
+  border-color: #b4b4b4;
+}
+
+.appointment-service-items, .appointment-barber-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border-bottom: solid 1px;
+  border-color: #b4b4b4;
+}
+
+.appointment-barber-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px;
+  border-color: #b4b4b4;
+}
+
+.appointment-barber-items span{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.appointment-confirm-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
   border-bottom: solid 1px;
   border-color: #b4b4b4;
 }
@@ -89,12 +128,11 @@ body {
   align-self: center;
 }
 
- .button-submit {
 .barber-image{
   width: 20em;
 }
 
-.service-button, .button-submit, .login-button{
+.button-submit, .login-button{
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
@@ -105,8 +143,19 @@ body {
   transition: background-color 0.25s ease;
 }
 
+.button-time {
+ display: inline-block;
+ padding: 1em 1.5em;
+ color: #FFF;
+ background-color: #64ACA0;
+ border-radius: 0.25em;
+ text-decoration: none;
+ -webkit-transition: background-color 0.25s ease;
+ transition: background-color 0.25s ease;
+}
+
 /*used as line breaks in item description*/
-.service-items p span {
+.service-items p span, .appointment-service-items p span {
   display: block;
 }
 
@@ -127,7 +176,7 @@ body {
   color: #333334;
 }
 
-.button-submit:hover, .button-submit:focus {
+.button-submit:hover, .button-submit:focus, .button-time:hover, .button-time:focus{
   background-color: #CABFAB;
   color: #333334;
 }
