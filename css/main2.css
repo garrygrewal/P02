@@ -128,7 +128,11 @@ body {
   align-self: center;
 }
 
- .button-submit {
+.barber-image{
+  width: 20em;
+}
+
+.button-submit, .login-button{
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
