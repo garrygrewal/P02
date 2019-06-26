@@ -242,6 +242,22 @@ body {
   height: auto;
 }
 
+/*form styling taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2 */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 2px solid #64ACA0;
+}
+
+input[type=text]:focus {
+  border: 3px solid #CABFAB;
+}
+
 /*Footer*/
 .footer {
   background: #333334;
