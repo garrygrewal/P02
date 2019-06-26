@@ -50,6 +50,8 @@ body {
   color: #868476
 }
 
+
+
 /*Service item listings*/
 /* box shadow styling taken from https://www.w3schools.com/css/css3_shadows.asp*/
 .service-listing, .appointment-listing, .login{
@@ -153,6 +155,21 @@ body {
  -webkit-transition: background-color 0.25s ease;
  transition: background-color 0.25s ease;
 }
+
+.button-back {
+  align-self: center;
+  padding-top: 3em;
+  justify-content: center;
+  text-decoration: none;
+  color: #64ACA0;
+  -webkit-transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.button-back:hover {
+  color: #999;
+}
+
 
 /*used as line breaks in item description*/
 .service-items p span, .appointment-service-items p span {
