@@ -275,3 +275,16 @@ input[type=text]:focus {
   text-align: center;
   width: 100%;
 }
+
+.footer a {
+  align-self: center;
+  padding-top: 3em;
+  justify-content: center;
+  text-decoration: none;
+  color: #64ACA0;
+  -webkit-transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.footer a:hover {
+  color: #999;
+}
