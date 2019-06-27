@@ -24,7 +24,12 @@ body {
   flex: 1 1 auto;
 }
 
-.nav-main a {
+nav img {
+  position: absolute;
+  margin-left: 2em;
+}
+
+.nav-right a {
   padding: 1em;
   color: #FFF;
   background-color: #333334;
@@ -129,6 +134,7 @@ body {
   border-color: #b4b4b4;
 }
 
+/*Barber page*/
 .barber{
   background-color: #FFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -162,6 +168,7 @@ body {
 }
 
 
+/*buttons*/
 .button-submit, .login-button{
   display: inline-block;
   padding: 0.5em 0.75em;
@@ -231,6 +238,10 @@ body {
   width: 100%;
   padding: 1rem;
   min-width: 400px;
+}
+
+.calendar-image {
+  padding-top: 1em;
 }
 
 .container{
@@ -307,4 +318,81 @@ input[type=text]:focus {
   color: white;
   text-align: center;
   width: 100%;
+}
+
+.footer a {
+  align-self: center;
+  padding-top: 3em;
+  justify-content: center;
+  text-decoration: none;
+  color: #64ACA0;
+  -webkit-transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.footer a:hover {
+  color: #999;
+}
+
+/*Media queries for mobile*/
+@media only screen and (max-width: 600px) {
+
+  /*https://stackoverflow.com/questions/30358630/html-body-not-filling-complete-width-on-mobile-devices*/
+  body {
+    position: absolute;
+  }
+
+  .service-listing, .appointment-listing {
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top: solid 4px;
+    border-color: #CABFAB;
+    width: 90%;
+    align-self: center;
+  }
+
+  .service-items, .login-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0.5em;
+    border-bottom: solid 1px;
+    border-color: #b4b4b4;
+  }
+
+  .barber-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-bottom: solid 1px;
+    border-color: #b4b4b4;
+  }
+
+  .barber-items img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .barber-items span {
+    padding-left: 0.5em;
+    padding-right: 1em;
+  }
+
+  .container img{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .about-text{
+    display: none;
+  }
+
+  .map-image{
+    width: 100%;
+    height: auto;
+  }
+
 }
