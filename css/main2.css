@@ -136,11 +136,31 @@ body {
   border-color: #CABFAB;
   width: 20em;
   align-self: center;
+  padding:1em;
+  margin: 1rem;
 }
 
 .barber-image{
-  width: 20em;
+  width: 18em;
 }
+
+.reviews{
+  align-self: center;
+}
+
+
+.review-item{
+  margin-top: 2rem;
+  border-top: solid 4px;
+  border-color: #CABFAB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 50rem;
+  min-width: 18rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
 
 .button-submit, .login-button{
   display: inline-block;
@@ -243,9 +263,22 @@ body {
   height: auto;
 }
 
+.hairstyle-image{
+  align-self: center;
+  width: 15rem;
+  height:auto;
+  padding: 2rem;
+}
+
+.gallery{
+  margin: 4rem;
+  align-self: center;
+}
+
 /*form styling taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2 */
 input[type=text] {
-  width: 100%;
+  width: 30rem;
+  height:auto;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
