@@ -8,7 +8,15 @@
 
 body {
   font-family: proxima-nova;
-  margin: 0;
+  /*margin: 0;
+  height:100%;*/
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 /*Navigation*/
@@ -49,6 +57,8 @@ body {
   font-size: 1em;
   color: #868476
 }
+
+
 
 /*Service item listings*/
 /* box shadow styling taken from https://www.w3schools.com/css/css3_shadows.asp*/
@@ -154,6 +164,21 @@ body {
  transition: background-color 0.25s ease;
 }
 
+.button-back {
+  align-self: center;
+  padding-top: 3em;
+  justify-content: center;
+  text-decoration: none;
+  color: #64ACA0;
+  -webkit-transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.button-back:hover {
+  color: #999;
+}
+
+
 /*used as line breaks in item description*/
 .service-items p span, .appointment-service-items p span {
   display: block;
@@ -217,12 +242,27 @@ body {
   height: auto;
 }
 
+/*form styling taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2 */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 2px solid #64ACA0;
+}
+
+input[type=text]:focus {
+  border: 3px solid #CABFAB;
+}
+
 /*Footer*/
 .footer {
   background: #333334;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+  flex-shrink: 0;
+  padding: 10px;
 }
 
 .footer p {
