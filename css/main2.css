@@ -236,8 +236,6 @@ nav img {
 .about-image {
   height: auto;
   width: 100%;
-  padding: 1rem;
-  min-width: 400px;
 }
 
 .calendar-image {
@@ -260,6 +258,7 @@ nav img {
   max-height: 430px;
   overflow: scroll;
   min-width: 360px;
+  max-width: 580px;
 }
 
 .banner-text{
@@ -393,6 +392,19 @@ input[type=text]:focus {
   .map-image{
     width: 100%;
     height: auto;
+  }
+
+  .gallery{
+    margin: 1rem;
+    align-self: center;
+    overflow: scroll;
+  }
+
+  .hairstyle-image{
+    align-self: center;
+    width: 15rem;
+    height:auto;
+    padding: 0.5rem;
   }
 
 }
