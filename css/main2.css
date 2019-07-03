@@ -22,12 +22,21 @@ body {
 /*Navigation*/
 .nav-main .nav-right li {
   flex: 1 1 auto;
+  position: sticky;
 }
 
-nav img {
+.nav-main{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav img{
   position: absolute;
   margin-left: 2em;
-}
+} 
+
 
 .nav-right a {
   padding: 1em;
@@ -62,6 +71,7 @@ nav img {
   font-size: 1em;
   color: #868476
 }
+
 
 
 
@@ -250,15 +260,21 @@ nav img {
 
 .home-banner{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255,255,255,0.8);
-  padding: 0.25rem 3rem;
+  background-color: rgba(230,230,230,0.9);
+  top: 15rem;
+  padding: 1rem 3rem;
   max-height: 430px;
   overflow: scroll;
-  min-width: 360px;
-  max-width: 580px;
+  width: 50%;
+  align-self: center;
+}
+
+.logo{
+  position: absolute;
+  align-self: center;
+  top: 8rem;
+  width: 4rem;
+  height: auto;
 }
 
 .banner-text{
@@ -273,6 +289,7 @@ nav img {
   align-self: center;
   width: 30rem;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .hairstyle-image{
