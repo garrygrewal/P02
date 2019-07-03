@@ -72,6 +72,9 @@ nav img{
   color: #868476
 }
 
+.top-header{
+  margin-top: 5rem;
+}
 
 
 
@@ -154,6 +157,10 @@ nav img{
   align-self: center;
   padding:1em;
   margin: 1rem;
+}
+
+.barber-review{
+  margin: 4rem 1rem;
 }
 
 .barber-image{
