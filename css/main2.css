@@ -276,6 +276,7 @@ nav img{
 }
 
 .about-image {
+  position: relative;
   height: auto;
   width: 100%;
 }
@@ -306,8 +307,9 @@ nav img{
   position: absolute;
   align-self: center;
   top: 8rem;
-  width: 4rem;
+  /*width: 4rem;*/
   height: auto;
+  max-width: 100%;
 }
 
 .banner-text{
@@ -336,7 +338,11 @@ nav img{
   margin: 4rem;
   align-self: center;
   overflow: scroll;
-  min-width: 30rem;
+  /*min-width: 30rem;*/
+}
+
+.contact-items {
+  padding-bottom: 5em;
 }
 
 /*form styling taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2 */
@@ -354,6 +360,10 @@ input[type=text] {
 
 input[type=text]:focus {
   border: 3px solid #CABFAB;
+}
+
+.about-text-under-banner {
+  display: none;
 }
 
 /*Footer*/
@@ -381,6 +391,23 @@ input[type=text]:focus {
 .footer a:hover {
   color: #999;
 }
+
+/*Media queries for tablet*/
+@media only screen and (max-width: 1200px) {
+
+  .home-banner{
+    display: none;
+  }
+
+  .about-text-under-banner {
+    display: block;
+    background-color: rgba(230,230,230,0.9);
+    padding: 1rem 3rem;
+    width: 100%;
+    align-self: center;
+  }
+}
+
 
 /*Media queries for mobile*/
 @media only screen and (max-width: 600px) {
@@ -429,14 +456,21 @@ input[type=text]:focus {
     padding-right: 1em;
   }
 
-  .container img{
+  .about-image{
     padding: 0;
     margin: 0;
     width: 100%;
   }
 
-  .about-text{
+  .home-banner{
     display: none;
+  }
+
+  .logo {
+    position: absolute;
+    max-width: 100%;
+    top: 5rem;
+    height: auto;
   }
 
   .map-image{
@@ -452,9 +486,18 @@ input[type=text]:focus {
 
   .hairstyle-image{
     align-self: center;
-    width: 15rem;
+    width: 50%;
     height:auto;
     padding: 0.5rem;
+  }
+
+  .about-text-under-banner {
+    display: inline-block;
+    background-color: rgba(230,230,230,0.9);
+    padding: 1rem 3rem;
+    width: 100%;
+    align-self: center;
+    height: auto;
   }
 
 }
