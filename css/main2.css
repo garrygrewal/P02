@@ -169,8 +169,12 @@ nav img{
 
 .reviews{
   align-self: center;
+  margin-top: 3rem;
 }
 
+.bio{
+  width: 200px;
+}
 
 .review-item{
   margin-top: 2rem;
@@ -218,6 +222,17 @@ nav img{
   transition: color 0.5s ease;
 }
 
+.button-action{
+  display: inline-block;
+  padding: 1em 2em;
+  color: #FFF;
+  background-color: #64ACA0;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  text-decoration: none;
+  margin: 1em 1em;
+}
+
 .button-back:hover {
   color: #999;
 }
@@ -245,7 +260,7 @@ nav img{
   color: #333334;
 }
 
-.button-submit:hover, .button-submit:focus, .button-time:hover, .button-time:focus{
+.button-submit:hover, .button-submit:focus, .button-time:hover, .button-time:focus, .button-action:hover, .button-action:focus{
   background-color: #CABFAB;
   color: #333334;
 }
